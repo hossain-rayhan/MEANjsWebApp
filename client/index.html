@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng" ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, intitial-scale=1">
+		<title>MEAN Beginner</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="style.css" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controllers/controllers.js"></script>
+	</head>
+		
+	<body>
+		<div class="container" ng-controller="empController">
+			<div class="row">
+				<div class="header clearfix">
+					<nav>
+						<ul class="nav nav-pills pull-right">
+							<li role="presentation" class="active"><a href="#/employees">Employee List</a></li>
+							<li role="presentation"><a href="#/employees/create">Add New Employee</a></li>
+						</ul>
+					</nav>
+					<h3> MEAN Js Employee App</h3>
+				</div>
+			</div>
+			<div ng-view></div>
+		</div>
+
+	</body>
+
+
+</html>
